@@ -25,36 +25,36 @@ A simple Command-Line Interface (CLI) application for managing student records u
 
 ## 📦 Installation
 
-1. **Clone this repository**
+### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/student-cli-app.git
-cd student-cli-app
-Install dependencies
-
+git clone https://github.com/Ravi098987/MongoDB_Node_CLI.git
+cd MongoDB_Node_CLI
+2. Install dependencies
 bash
 Copy
 Edit
 npm install
-Start MongoDB
+3. Start MongoDB
+Make sure MongoDB is running locally on your system.
 
-Make sure MongoDB is running locally on your system. If not, start the MongoDB service:
-
+For Linux/macOS:
 bash
 Copy
 Edit
-# For Linux/macOS
 sudo service mongod start
-
-# For Windows (via MongoDB Compass or terminal)
+For Windows (via MongoDB Compass or terminal):
+bash
+Copy
+Edit
 net start MongoDB
-Default MongoDB URI: mongodb://localhost:27017/toPushGitdb
+Default MongoDB URI used: mongodb://localhost:27017/toPushGitdb
 
 🚀 Run the Application
 bash
 Copy
 Edit
-node index.js
+node app.js
 You'll see a CLI menu like this:
 
 mathematica
@@ -67,10 +67,12 @@ Edit
 4. 🗑️ Delete Student
 5. ❌ Exit
 📂 Project Structure
-bash
+pgsql
 Copy
 Edit
-student-cli-app/
-├── index.js         # Main CLI application
-├── package.json     # NPM configuration
-└── README.md        # Project documentation
+MongoDB_Node_CLI/
+├── app.js             # Main CLI application
+├── models/
+│   └── User.js        # Mongoose schema for student
+├── package.json       # NPM configuration
+├── package-lock.json
